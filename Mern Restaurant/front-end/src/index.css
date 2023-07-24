@@ -1,0 +1,136 @@
+/* Login Page Starts */
+
+.card_box_login{
+    width: 40%;
+}
+
+.login_title{
+    font-size: 60px;
+    background: #f8f7f5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1rem #0f0f0f;
+}
+
+.login_logo_animation{
+    animation: rotationLogo infinite 0.8s linear;
+}
+
+/* Login Page Ends */
+
+/* Cart Animation Starts */
+
+.img_animation{
+    animation: imgAnimate infinite 5.5s ease-in-out;
+}
+
+/* Cart Animation ends */
+
+/* Animation Login Page */
+
+@keyframes rotationLogo {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes imgAnimate {
+    0%, 100%{
+        transform: rotate(0deg) scale(0);
+    }
+    50%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Media Query Starts */
+
+/* Login Page Starts */
+
+@media (max-width: 991px) {
+    .card_box_login{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_box_login{
+        width: 70%;
+    }
+}
+
+@media (max-width: 560px) {
+    .card_box_login{
+        width: 100%;
+        margin: 0px 20px;
+    }
+}
+
+/* Login Page Ends */
+
+/* Media Query Starts */
+
+/* Data loading on Scroll */
+
+/* .revealContainer .leftReveal{
+    transform: translateX(-550px);
+}
+
+.revealContainer .leftReveal.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0px);
+}
+
+.revealContainer .rightReveal{
+    transform: translateX(550px) scale(0);
+}
+
+.revealContainer .rightReveal.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0px) scale(1);
+}
+
+.leftRevealSlider{
+    transform: translateY(200px) scale(0);
+}
+
+.leftRevealSlider.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0px) scale(1);
+}
+
+.rightRevealMultiProducts{
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.rightRevealMultiProducts.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+/* Cart Page Starts */
+
+/* .leftRevealCart{
+    transform: translateX(-550px) scale(0);
+}
+
+.leftRevealCart.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0px) scale(1);
+}
+
+.rightRevealCart{
+    transform: translateX(550px) scale(0);
+}
+
+.rightRevealCart.active{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0px) scale(1);
+} */
+
+/* Cart Page Ends */

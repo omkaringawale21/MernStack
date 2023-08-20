@@ -1,13 +1,13 @@
-header{
+header {
     background-color: #131921;
-    width:100%;
+    width: 100%;
     height: 60px;
     position: fixed;
     top: 0;
-    z-index:2;
+    z-index: 2;
 }
 
-header nav{
+header nav {
     width: 100%;
     margin: auto;
     height: 100%;
@@ -15,16 +15,17 @@ header nav{
     justify-content: space-around;
     align-items: center;
     z-index: 4;
+    overflow: hidden;
 }
 
-header nav .navlogo img{
+header nav .navlogo img {
     width: 110px;
     margin-top: 10px;
 }
 
-header nav .left{
+header nav .left {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     /* border: 2px solid red; */
     flex: .7;
@@ -32,8 +33,8 @@ header nav .left{
 
 
 
-header nav .left input{
-    width:400px;
+header nav .left input {
+    width: 400px;
     height: 38px;
     border: none;
     outline: none;
@@ -43,7 +44,7 @@ header nav .left input{
     padding-left: 10px;
 }
 
-header nav .left .search_icon{
+header nav .left .search_icon {
     background-color: #febd69;
     height: 40px;
     width: 40px;
@@ -55,25 +56,25 @@ header nav .left .search_icon{
     cursor: pointer;
 }
 
-header nav .nav_searchbaar{
+header nav .nav_searchbaar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header nav .left input:focus{
+header nav .left input:focus {
     border: 2px solid #febd69;
 }
 
-header nav .right{
+header nav .right {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     /* border: 2px solid red; */
     flex: .3;
 }
 
-header nav .right .nav_btn a{
+header nav .right .nav_btn a {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
@@ -85,11 +86,11 @@ header nav .right .nav_btn a{
 
 
 
-header nav .right .nav_btn a:hover{
+header nav .right .nav_btn a:hover {
     border: 1px solid white;
 }
 
-header nav .right .cart_btn{
+header nav .right .cart_btn {
     display: flex;
     margin-left: 22px;
     cursor: pointer;
@@ -102,95 +103,108 @@ header nav .right .cart_btn{
     margin-right: 20px;
 }
 
-header nav .right .cart_btn:hover{
+header nav .right .cart_btn:hover {
     border: 1px solid white;
 }
 
-header nav .right .cart_btn #icon{
+header nav .right .cart_btn #icon {
     margin-right: 3px;
     color: #fff;
     margin-top: 2px;
 }
 
-.right a{
+.right a {
     text-decoration: none;
 }
 
-header nav .avtar{
+header nav .avtar {
     cursor: pointer;
 }
-header nav .avtar2{
+
+header nav .avtar2 {
     cursor: pointer;
     background-color: #1365cf;
 }
 
-header .hamburgur{
+nav .left .hamburgur {
     display: none;
 }
 
-header .extrasearch{
+header nav .nav_searchbaar .extrasearch {
     position: absolute;
     background-color: #fff;
     color: #000;
     top: 50px;
     width: 440px;
+    border: 1px solid #000;
 }
 
-header .extrasearch a{
+header .extrasearch a {
     text-decoration: none;
     color: #000;
 }
 
 /* drawer sty */
-header nav .drawer{
+header nav .drawer {
     width: 250px;
     background-color: red;
 }
 
 
-@media (max-width:800px){
-    header .hamburgur{
+@media (max-width:800px) {
+    nav .left .hamburgur {
         display: block;
     }
-    header nav{
+
+    header nav {
         overflow: hidden;
     }
+
     header nav .right .nav_btn,
     header nav .right .avtar2,
-    header nav .right .avtar{
-        display:none;
+    header nav .right .avtar {
+        display: none;
     }
-    header nav .left input{
+
+    header nav .left input {
         width: 150px;
         margin-left: 10px;
     }
 
-    header nav .left input::placeholder{
+    header nav .left input::placeholder {
         visibility: hidden;
     }
-  
-    header nav .right .cart_btn{
+
+    header nav .right .cart_btn {
         margin-right: 0;
     }
-    
-    
+
+
 }
 
-@media (max-width:568px){
-
-    header nav .left input{
-       display: none;
-    }
-    
-    header nav .left .search_icon{
-        /* color: #fff;
-        font-size: 18px;
-        background-color: #131921; */
+@media (max-width:568px) {
+    header nav .left input {
         display: none;
     }
-    header nav .navlogo img{
-        width: 95px;
+
+    header nav .left input {
+        display: block;
+        width: auto;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    header nav .left .search_icon{
+        display: none;
+    }
+
+    header nav .navlogo img {
+        width: 65px;
         margin-top: 14px;
-        margin-left: 67px;
+        margin-left: 30px;
+    }
+
+    header nav .nav_searchbaar .extrasearch {
+        width: auto;
     }
 }

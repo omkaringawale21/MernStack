@@ -1,7 +1,7 @@
 .home_section {
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 60px;
     background-color: #e7e7e7;
     min-height: calc(100vh - 50px);
     border-bottom: 2px solid rgb(199, 199, 199);

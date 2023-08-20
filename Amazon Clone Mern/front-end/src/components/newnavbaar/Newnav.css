@@ -4,7 +4,7 @@
     height: 40px;
     background-color: #232f3e;
     position: relative;
-    top: 50px;
+    top: 60px;
 }
 
 .new_nav .nav_data{
@@ -24,19 +24,31 @@
     color: #fff;
     font-weight: 500;
     font-size: 13px;
-    border: 0.8px solid #232f3e;
+    /* border: 0.8px solid #232f3e; */
     padding: 8.2px;
     transition: all 0.3s linear;
     cursor: pointer;
 }
 
-.new_nav .nav_data .left_data p:hover{
+/* .new_nav .nav_data .left_data p:hover{
     border: 0.8px solid #ffffff;
+} */
+
+.new_nav .nav_data .right_data img{
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
 }
 
 /* media query */
 @media (max-width:808px){
     .new_nav{
        display: none;
+    }
+}
+
+@media (max-width:1020px){
+    .new_nav .nav_data .left_data p{
+        font-size: 10px;
     }
 }
